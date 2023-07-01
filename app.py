@@ -106,7 +106,7 @@ def add_user():
         print(tipos_v)
         print(mov_v)
         print(back_images)
-        return render_template('result.html', tipos_v = tipos_v, mov_v = mov_v, front_images = front_images, back_images= back_images)
+        return render_template('result.html', tipos_v = tipos_v, mov_v = mov_v, front_images = front_images, back_images= back_images, pk = pk)
 
 
 if __name__ == '__main__':
