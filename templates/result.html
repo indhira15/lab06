@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="row">
+
+    <div class="col-md-5">
+
+        <h2>Tipo</h2>
+        {% for i in tipos_v %}
+            <li>{{i}}</li>
+        {% endfor %}
+
+        <h2>Movimientos</h2>
+        {% for i in mov_v %}
+            <li>{{i}}</li>
+        {% endfor %}
+
+        <h2>Fotos de frente</h2>
+        <img src="{{ front_images[0] }}">
+        <img src="{{ front_images[1] }}">
+
+        <h2>Fotos de espalda</h2>
+        <img src="{{ back_images[0] }}" alt = ''>
+        <img src="{{ back_images[1] }}" alt = ''>
+
+
+    </div>
+
+
+</div>
+
+{% endblock %}
